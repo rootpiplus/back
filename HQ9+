@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    string input;
+    cin>>input;
+    for(char a:input){
+        if(a=='H')cout<<"Hello, world!";
+        else if(a=='Q')cout<<"Q\n";
+        else if(a=='+')continue;
+        else if(a=='9'){
+            for (int i = 99; i > 0; i--) {
+                cout << i << " bottles of beer on the wall, " << i << " bottles of beer.\n";
+                cout <<"Take one down and pass it around,"<<i-1<<" bottles of beer on the wall.\n\n";
+            }
+            cout << "1 bottle of beer on the wall, 1 bottle of beer.\n";
+            cout << "Take it down and pass it around, no more bottles of beer on the wall.\n\n";
+            cout << "No more bottles of beer on the wall, no more bottles of beer.\n";
+            cout << "Go to the store and buy some more, 99 bottles of beer on the wall.\n";
+        }
+    }
+    
+}
