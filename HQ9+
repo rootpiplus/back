@@ -5,7 +5,7 @@ int main(){
     string input;
     cin>>input;
     for(char a:input){
-        if(a=='H')cout<<"Hello, world!";
+        if(a=='H')cout<<"Hello, world!\n";
         else if(a=='Q')cout<<"Q\n";
         else if(a=='+')continue;
         else if(a=='9'){
